@@ -1,0 +1,13 @@
+definition_version: 1
+snowpark:
+  project_name: "hello_world"
+  stage_name: "sp_test.deployment"
+  src: "hello_world_sp/"
+  procedures:
+    - name: "hello_world_sp"
+      database: "hol_db"
+      schema: "sp_test"
+      handler: "procedure.main"
+      runtime: "3.11"
+      signature: ""
+      returns: string
